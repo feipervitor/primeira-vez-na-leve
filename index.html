@@ -18,7 +18,7 @@
           },
           colors: {
             leve: {
-              50: '#f7f6f2',
+              50:  '#f7f6f2',
               100: '#f0ece4',
               200: '#e4ddd2',
               300: '#d4c9ba',
@@ -49,15 +49,16 @@
       backdrop-filter: blur(8px);
       background: rgba(249, 248, 245, 0.82);
     }
-    [data-theme="dark"] body { background: #171614; }
   </style>
 </head>
 <body class="bg-leve-50 text-leve-900 antialiased">
-  <div class="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(1,105,111,0.08),_transparent_35%),linear-gradient(to_bottom,_#f7f6f2,_#f3f0ec)]">
-    <header class="mx-auto flex max-w-6xl items-center justify-between px-5 py-5 md:px-8">
-      <div class="flex items-center gap-3 text-leve-900">
+  <div class="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(1,105,111,0.09),_transparent_40%),linear-gradient(to_bottom,_#f7f6f2,_#f0ece4)]">
+
+    <!-- Header -->
+    <header class="mx-auto flex max-w-3xl items-center justify-between px-5 py-5 md:px-8">
+      <div class="flex items-center gap-3">
         <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-tealleve-500 text-white shadow-card">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M12 3L19 7V12C19 16.25 16.2 20.05 12 21C7.8 20.05 5 16.25 5 12V7L12 3Z" stroke="currentColor" stroke-width="1.7" fill="currentColor" opacity="0.92"></path>
             <path d="M9.2 11.8L11.1 13.7L14.9 9.9" stroke="#ffffff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
@@ -67,56 +68,56 @@
           <p class="text-xs font-medium uppercase tracking-[0.18em] text-leve-500">bem-vindo(a)</p>
         </div>
       </div>
-      <button id="themeToggle" type="button" class="flex h-11 w-11 items-center justify-center rounded-2xl border border-black/5 bg-white/70 text-leve-700 shadow-card hover:bg-white" aria-label="Alternar tema">
+      <button id="themeToggle" type="button" class="flex h-11 w-11 items-center justify-center rounded-2xl border border-black/5 bg-white/70 text-leve-600 shadow-card hover:bg-white transition-colors" aria-label="Alternar tema">
         <span id="themeIcon">☾</span>
       </button>
     </header>
 
-    <main class="mx-auto grid max-w-6xl gap-6 px-5 pb-10 md:grid-cols-[1.08fr_0.92fr] md:px-8 md:pb-14">
-      <section class="rounded-[28px] border border-black/5 bg-white/80 p-6 shadow-soft md:p-10">
-        <div class="mb-8 max-w-2xl">
-          <span class="mb-4 inline-flex rounded-full bg-tealleve-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-tealleve-600">Bem-vindo</span>
-          <h1 class="text-3xl font-extrabold tracking-tight text-leve-900 md:text-5xl">Que bom ter você na Igreja Leve.</h1>
-          <p class="mt-3 text-lg font-semibold text-tealleve-600 md:text-xl">Primeira vez ou chegando na Leve?</p>
-          
-        </div>
+    <!-- Main -->
+    <main class="mx-auto max-w-3xl px-5 pb-14 md:px-8">
 
-        <div class="grid gap-4 md:grid-cols-3">
-          <article class="rounded-3xl border border-black/5 bg-leve-50 p-5 shadow-card">
-            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-leve-500">Missão</p>
-            <p class="mt-3 text-lg font-bold text-leve-900">Ser uma Igreja Leve para um mundo exausto.</p>
-          </article>
-          <article class="rounded-3xl border border-black/5 bg-leve-50 p-5 shadow-card">
-            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-leve-500">Visão</p>
-            <p class="mt-3 text-lg font-bold text-leve-900">Criar uma comunidade onde cada pessoa exausta encontre pertencimento, cura e propósito em Jesus.</p>
-          </article>
-          <article class="rounded-3xl border border-black/5 bg-leve-50 p-5 shadow-card">
-            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-leve-500">Valores</p>
-            <ul class="mt-3 space-y-2">
-              <li class="text-lg font-bold text-leve-900">Bíblica</li>
-              <li class="text-lg font-bold text-leve-900">Simples</li>
-              <li class="text-lg font-bold text-leve-900">Contemporânea</li>
-            </ul>
-          </article>
-        </div>
+      <!-- Saudação -->
+      <div class="mb-8 text-center">
+        <span class="mb-4 inline-flex rounded-full bg-tealleve-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-tealleve-600">Bem-vindo(a)</span>
+        <h1 class="mt-3 text-4xl font-extrabold tracking-tight text-leve-900 md:text-5xl">Que bom ter você<br>na Igreja Leve.</h1>
+        <p class="mt-4 text-base font-medium text-leve-600 md:text-lg">É sua primeira vez aqui ou está chegando na Leve?<br>Deixe seu contato — a nossa equipe vai te acolher.</p>
+      </div>
 
-        <div class="mt-8 rounded-3xl border border-dashed border-tealleve-500/25 bg-tealleve-500/5 p-5">
-          <p class="text-sm font-semibold text-tealleve-700">Como funciona</p>
-          <p class="mt-2 text-sm leading-6 text-leve-700">A pessoa aponta o celular para o QR Code, chega nesta página, preenche o cadastro inicial e os dados ficam prontos para contato pastoral e de acolhimento.</p>
-        </div>
-      </section>
+      <!-- Cards Missão / Visão / Valores -->
+      <div class="grid gap-4 md:grid-cols-3 mb-8">
+        <article class="rounded-3xl border border-black/5 bg-white/80 p-5 shadow-card">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-leve-400">Missão</p>
+          <p class="mt-3 text-base font-bold leading-snug text-leve-900">Ser uma Igreja Leve para um mundo exausto.</p>
+        </article>
+        <article class="rounded-3xl border border-black/5 bg-white/80 p-5 shadow-card">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-leve-400">Visão</p>
+          <p class="mt-3 text-base font-bold leading-snug text-leve-900">Criar uma comunidade onde cada pessoa exausta encontre pertencimento, cura e propósito em Jesus.</p>
+        </article>
+        <article class="rounded-3xl border border-black/5 bg-white/80 p-5 shadow-card">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-leve-400">Valores</p>
+          <ul class="mt-3 space-y-1">
+            <li class="text-base font-bold text-leve-900">Bíblica</li>
+            <li class="text-base font-bold text-leve-900">Simples</li>
+            <li class="text-base font-bold text-leve-900">Contemporânea</li>
+          </ul>
+        </article>
+      </div>
 
-      <aside class="glass rounded-[28px] border border-black/5 p-6 shadow-soft md:p-8">
-        <div class="mb-6">
-          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-leve-500">Cadastro inicial</p>
-          <h2 class="mt-2 text-2xl font-extrabold tracking-tight text-leve-900">Deixe seu contato</h2>
-          <p class="mt-3 text-sm font-bold leading-6 text-leve-900">Se esta é a sua primeira vez aqui ou já participou de mais de um encontro, preencha o cadastro inicial. Assim a nossa equipe poderá te acolher, fazer contato e te ajudar nos próximos passos da sua caminhada conosco.</p>
-        </div>
+      <!-- CTA Cadastro -->
+      <div class="glass rounded-[28px] border border-black/5 p-6 shadow-soft md:p-8">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-leve-400">Cadastro inicial</p>
+        <h2 class="mt-2 text-2xl font-extrabold tracking-tight text-leve-900">Deixe seu contato</h2>
+        <p class="mt-3 text-sm leading-6 text-leve-700">Se esta é a sua primeira vez aqui ou já participou de mais de um encontro, preencha o cadastro inicial. Assim a nossa equipe poderá te acolher, fazer contato e te ajudar nos próximos passos da sua caminhada conosco.</p>
+        <a
+          href="https://forms.gle/X6ND8gTmA5759PPQA"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-6 flex w-full items-center justify-center rounded-2xl bg-tealleve-500 px-6 py-4 text-sm font-semibold text-white shadow-sm hover:bg-tealleve-600 active:scale-[0.98] transition-all"
+        >
+          Preencher cadastro
+        </a>
+      </div>
 
-        <div class="mt-6 rounded-3xl bg-white/80 p-5 shadow-card">
-          <a href="https://forms.gle/X6ND8gTmA5759PPQA" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex w-full items-center justify-center rounded-2xl border border-emerald-700/10 bg-emerald-600 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-emerald-700">Preencher cadastro</a>
-        </div>
-      </aside>
     </main>
   </div>
 
@@ -142,7 +143,6 @@
       currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
       applyTheme(currentTheme);
     });
-
   </script>
 </body>
 </html>
